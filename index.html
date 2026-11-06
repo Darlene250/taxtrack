@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaxTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TaxTrack</h1>
+    <p>Client tax documents and filing deadlines</p>
+  </header>
+
+  <main>
+    <section id="summary" class="summary" aria-live="polite"></section>
+
+    <form id="addForm" novalidate>
+      <h2>Add a task</h2>
+      <label>Client name <input id="client" type="text"></label>
+      <label>Document / task <input id="task" type="text"></label>
+      <label>Deadline <input id="deadline" type="date"></label>
+      <label>Status
+        <select id="status">
+          <option>Pending</option>
+          <option>In progress</option>
+          <option>Done</option>
+        </select>
+      </label>
+      <button type="submit">Add</button>
+      <p id="error" role="alert"></p>
+    </form>
+
+    <div id="tableContainer"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

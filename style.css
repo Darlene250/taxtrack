@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f7fa;
+  color: #1a1a1a;
+}
+header { background: #0f766e; color: #fff; padding: 1rem 1.5rem; }
+header h1 { margin: 0; }
+header p { margin: 0.25rem 0 0; }
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+
+.summary { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.card { flex: 1 1 180px; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card h2 { margin: 0 0 .25rem; font-size: .9rem; color: #555; }
+.card p { margin: 0; font-size: 1.4rem; font-weight: 700; }
+
+form { background: #fff; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; }
+form h2 { width: 100%; margin: 0; }
+label { display: flex; flex-direction: column; font-weight: 600; font-size: .9rem; gap: .25rem; }
+input, select, button { font: inherit; padding: .5rem .75rem; border: 1px solid #d0d5dd; border-radius: 6px; }
+button { cursor: pointer; background: #0f766e; color: #fff; border-color: #0f766e; }
+button.danger { background: #b42318; border-color: #b42318; }
+#error { color: #b42318; width: 100%; margin: 0; min-height: 1.2em; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+th, td { padding: .75rem; text-align: left; border-bottom: 1px solid #d0d5dd; }
+th { background: #ccfbf1; }
+tr.overdue td { background: #fbd0d0; }
+tr.done td { background: #d4f5dc; }
+.empty { text-align: center; color: #555; padding: 1.5rem; }
